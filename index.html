@@ -1,43 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MovieVilla</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <!-- NAVBAR -->
-   <nav class="bg-gray-900">
-    <div class="navContainer container md:mx-auto bg-transparent text-white flex items-center text-sm">
-      <a href="#" class=" w-20"><i class="fa-solid fa-bars"></i></a>
-      <a href="#" class="w-60"><img src="./images/movie Logo.png" alt="logo"></a>
-      <a href="#" class=" w-40 hover:text-gray-600">Movies<i class="fa-solid fa-angle-down mx-1"></i></a>
-      <a href="#" class=" w-40 hover:text-gray-600">TvShow<i class="fa-solid fa-angle-down mx-1"></i></a>
-      <a href="#" class=" w-40 hover:text-gray-600">Genre<i class="fa-solid fa-angle-down mx-1"></i></a>
-      <a href="#" class=" w-40 hover:text-gray-600">Web Series<i class="fa-solid fa-angle-down mx-1"></i></a>
-      <a href="#" class=" w-40 hover:text-gray-600">Anime<i class="fa-solid fa-angle-down mx-1"></i></a>
-      <div class="w-80 relative text-gray-600 flex">
-        <input class="search-bar w-full border-transparent focus:border-b focus:outline-none bg-transparent text-sm p-4 border-gray-100" type="search" placeholder="Search" aria-label="Search">
-        <div class="absolute inset-y-0 right-0 flex items-center pr-3">
-          <i class="fa-solid fa-magnifying-glass"></i>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieVilla</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="bg-gray-900 fixed top-0 w-screen">
+      <div
+        class="container md:mx-auto bg-transparent text-white flex items-center text-sm"
+      >
+        <a href="#" class="w-20"><i class="fa-solid fa-bars"></i></a>
+        <a href="#" class="w-60"
+          ><img src="./images/movie Logo.png" alt="logo"
+        /></a>
+        <a href="#" class="w-40 hover:text-gray-600"
+          >Movies<i class="fa-solid fa-angle-down mx-1"></i
+        ></a>
+        <a href="#" class="w-40 hover:text-gray-600"
+          >TvShow<i class="fa-solid fa-angle-down mx-1"></i
+        ></a>
+        <a href="#" class="w-40 hover:text-gray-600"
+          >Genre<i class="fa-solid fa-angle-down mx-1"></i
+        ></a>
+        <a href="#" class="w-40 hover:text-gray-600"
+          >Web Series<i class="fa-solid fa-angle-down mx-1"></i
+        ></a>
+        <a href="#" class="w-40 hover:text-gray-600"
+          >Anime<i class="fa-solid fa-angle-down mx-1"></i
+        ></a>
+        <div class="w-80 text-gray-600 flex">
+          <input
+            class="search-bar w-full border-transparent focus:border-b focus:outline-none bg-transparent text-sm p-4 border-gray-100"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <div class="inset-y-0 right-0 flex items-center pr-3">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+        </div>
+        <div class="h-10 w-60 p-2 mt-3">
+          <a
+            href="#"
+            class="rounded-full items-center py-1 px-4 h-full border-white border-2 text-center"
+            >SUBSCRIBE</a
+          >
+        </div>
+        <a href="#" class="">LOG IN</a>
+      </div>
+    </nav>
+
+    <!-- SECTION CONTAINING MOVIES IMAGE-->
+    <section class="pt-16">
+      <div
+        class="bg-cover bg-center image-first bg-no-repeat h-96 w-full bg-[url('../images/bannerImage.png')]"
+      >
+        <!-- <div class="absolute inset-0 bg-black bg-opacity-50"></div> -->
+      </div>
+    </section>
+
+    <!-- SECTION THAT CONTAINS CARDS -->
+    <section class="bg-blueshade text-cyan-50 h-full w-full p-6">
+      <!-- CARD CONTAINER 1  -->
+      <div
+        class="w-4/5 md:mx-auto bg-transparent items-center justify-between px-10"
+      >
+        <div class="w-full flex justify-between py-10">
+          <h1 class="text-4xl font-semibold">latest and trending</h1>
+          <h6 class="text-center">view all</h6>
+        </div>
+
+        <div class="flex w-full justify-between">
+          <!-- CARD1 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard1.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">Stranger Things</h2>
+            <p class="text-gray-600 text-center text-sm">
+              Action, Adventure, Horror
+            </p>
+          </div>
+          <!-- CARD2 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard2.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">Batman Begin</h2>
+            <p class="text-gray-600 text-center text-sm">Action Thriller</p>
+          </div>
+          <!-- CARD3 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard3.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">
+              Spide-Man Into The Spider Verse
+            </h2>
+            <p class="text-gray-600 text-center text-sm">Action Thriller</p>
+          </div>
+          <!-- CARD4 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard4.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2020</p>
+            <h2 class="text-l font-bold text-center">
+              Shang-Chi Legend Of The Ten Rign
+            </h2>
+            <p class="text-gray-600 text-center text-sm">Action</p>
+          </div>
+          <!-- CARD5 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard5.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2021</p>
+            <h2 class="text-l font-bold text-center">Dune</h2>
+            <p class="text-gray-600 text-center text-sm">Action, Thriller</p>
+          </div>
         </div>
       </div>
-      <div class="h-10 w-60 p-2 mt-3"><a href="#" class="rounded-full items-center py-1 px-4 h-full border-white border-2 text-center">SUBSCRIBE</a></div>
-      <a href="#" class="">LOG IN</a>
-    </div>
-   </nav> 
+      <!-- CARD CONTAINER 2  -->
+      <div
+        class="w-4/5 md:mx-auto bg-transparent items-center justify-between px-10"
+      >
+        <div class="w-full flex justify-between py-10">
+          <h1 class="text-4xl font-semibold">Bollywood</h1>
+          <h6 class="text-center">view all</h6>
+        </div>
 
-   <!-- SECTION CONTAINING MOVIES IMAGE-->
-   <section>
-    <div class="relative bg-cover bg-center image-first bg-no-repeat">
-      <!-- <div class="absolute inset-0 bg-black bg-opacity-50"></div> -->
-    </div>
-    
-   </section>
+        <div class="flex w-full justify-between">
+          <!-- CARD1 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard6.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">India, 2020</p>
+            <h2 class="text-l font-bold text-center">Satyamev Jayate</h2>
+            <p class="text-gray-600 text-center text-sm">Action, Adventure</p>
+          </div>
+          <!-- CARD2 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard7.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">India, 2018-Current</p>
+            <h2 class="text-l font-bold text-center">Raees</h2>
+            <p class="text-gray-600 text-center text-sm">Action Thriller</p>
+          </div>
+          <!-- CARD3 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard8.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">India, 2020-Current</p>
+            <h2 class="text-l font-bold text-center">Bajirao Mastani</h2>
+            <p class="text-gray-600 text-center text-sm">Action</p>
+          </div>
+          <!-- CARD4 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard9.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">India, 2020-Current</p>
+            <h2 class="text-l font-bold text-center">Drishyam</h2>
+            <p class="text-gray-600 text-center text-sm">Adventure Thriller</p>
+          </div>
+          <!-- CARD5 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard10.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">India, 2020-Current</p>
+            <h2 class="text-l font-bold text-center">Kabir Singh</h2>
+            <p class="text-gray-600 text-center text-sm">Adventure Action</p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD CONTAINER 3  -->
+      <div
+        class="w-4/5 md:mx-auto bg-transparent items-center justify-between px-10"
+      >
+        <div class="w-full flex justify-between py-10">
+          <h1 class="text-4xl font-semibold">Hollywood</h1>
+          <h6 class="text-center">view all</h6>
+        </div>
 
-  <script src="https://kit.fontawesome.com/953df531f5.js" crossorigin="anonymous"></script>
-</body>
+        <div class="flex w-full justify-between">
+          <!-- CARD1 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard11.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">Dunkrik</h2>
+            <p class="text-gray-600 text-center text-sm">Adventure</p>
+          </div>
+          <!-- CARD2 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard12.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">India, 2020-Current</p>
+            <h2 class="text-l font-bold text-center">No Time To Die</h2>
+            <p class="text-gray-600 text-center text-sm">Adventure Action</p>
+          </div>
+          <!-- CARD3 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard13.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2019-Current</p>
+            <h2 class="text-l font-bold text-center">Don't Breathe</h2>
+            <p class="text-gray-600 text-center text-sm">Adventure Thriller</p>
+          </div>
+          <!-- CARD4 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard14.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2019-Current</p>
+            <h2 class="text-l font-bold text-center">Avengers-Endgame</h2>
+            <p class="text-gray-600 text-center text-sm">Action</p>
+          </div>
+          <!-- CARD5 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard15.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">India, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">The Outpost</h2>
+            <p class="text-gray-600 text-center text-sm">Adventure Action</p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD CONTAINER 4  -->
+      <div
+        class="w-4/5 md:mx-auto bg-transparent items-center justify-between px-10"
+      >
+        <div class="w-full flex justify-between py-10">
+          <h1 class="text-4xl font-semibold">latest and trending</h1>
+          <h6 class="text-center">view all</h6>
+        </div>
+
+        <div class="flex w-full justify-between">
+          <!-- CARD1 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard1.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">Stranger Things</h2>
+            <p class="text-gray-600 text-center text-sm">
+              Action, Adventure, Horror
+            </p>
+          </div>
+          <!-- CARD2 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard2.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">Batman Begin</h2>
+            <p class="text-gray-600 text-center text-sm">Action Thriller</p>
+          </div>
+          <!-- CARD3 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard3.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">
+              Spide-Man Into The Spider Verse
+            </h2>
+            <p class="text-gray-600 text-center text-sm">Action Thriller</p>
+          </div>
+          <!-- CARD4 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard4.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2020</p>
+            <h2 class="text-l font-bold text-center">
+              Shang-Chi Legend Of The Ten Rign
+            </h2>
+            <p class="text-gray-600 text-center text-sm">Action</p>
+          </div>
+          <!-- CARD5 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard5.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2021</p>
+            <h2 class="text-l font-bold text-center">Dune</h2>
+            <p class="text-gray-600 text-center text-sm">Action, Thriller</p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD CONTAINER 5  -->
+      <div
+        class="w-4/5 md:mx-auto bg-transparent items-center justify-between px-10"
+      >
+        <div class="w-full flex justify-between py-10">
+          <h1 class="text-4xl font-semibold">latest and trending</h1>
+          <h6 class="text-center">view all</h6>
+        </div>
+
+        <div class="flex w-full justify-between">
+          <!-- CARD1 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard1.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">Stranger Things</h2>
+            <p class="text-gray-600 text-center text-sm">
+              Action, Adventure, Horror
+            </p>
+          </div>
+          <!-- CARD2 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard2.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">Batman Begin</h2>
+            <p class="text-gray-600 text-center text-sm">Action Thriller</p>
+          </div>
+          <!-- CARD3 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard3.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2016-Current</p>
+            <h2 class="text-l font-bold text-center">
+              Spide-Man Into The Spider Verse
+            </h2>
+            <p class="text-gray-600 text-center text-sm">Action Thriller</p>
+          </div>
+          <!-- CARD4 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard4.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2020</p>
+            <h2 class="text-l font-bold text-center">
+              Shang-Chi Legend Of The Ten Rign
+            </h2>
+            <p class="text-gray-600 text-center text-sm">Action</p>
+          </div>
+          <!-- CARD5 -->
+          <div class="w-36">
+            <img
+              src="./images/moviecard5.png"
+              alt=""
+              class="w-36 rounded-lg h-64"
+            />
+            <p class="text-gray-600 text-center text-sm">Usa, 2021</p>
+            <h2 class="text-l font-bold text-center">Dune</h2>
+            <p class="text-gray-600 text-center text-sm">Action, Thriller</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://kit.fontawesome.com/953df531f5.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
