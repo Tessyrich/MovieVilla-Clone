@@ -1,8 +1,3 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.image-first{
-   
-    background-repeat: no-repeat;
-}
